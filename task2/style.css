@@ -1,0 +1,198 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    background: #f4f4f4;
+    color: #666;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    .container{
+        display: flex;
+        .logo{
+            margin-right: 20px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        nav{
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: flex-end;
+                li{
+                    margin-right: 20px;
+                    a{
+                        color: #666;
+                    }
+                }
+            }
+        }
+    }
+}
+.hero {
+    background: url('../imges/solar-panels-meadow\ 1.png') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+    h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 45px;
+    }    
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    .personal{
+        .head{
+            background: #519251;
+            color: white;
+            padding: 20px;
+            h2{
+                font-size: 1.5rem;
+                font-weight: 100;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+            span{
+                font-size: 80px;
+                font-weight: bold;
+            }
+            p{
+                letter-spacing: 2px;
+            }
+        }
+    }        
+    .business{
+        .head{
+            color: white;
+            background: #2c4985;
+            padding: 20px;
+            h2{
+                font-size: 1.5rem;
+                font-weight: 100;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+            span{
+                font-size: 80px;
+                font-weight: bold;
+            }
+            p{
+                letter-spacing: 2px;
+            }
+        }
+    }    
+    .enterprise{
+        .head{
+            background: black;
+            color: white;
+            padding: 20px;
+            h2{
+                font-size: 1.5rem;
+                font-weight: 100;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+            span{
+                font-size: 80px;
+                font-weight: bold;
+            }
+            p{
+                letter-spacing: 2px;
+            }
+        }
+    }
+    .pricing-plan {
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 400px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        .price {
+            color: white;
+            font-size: 2.5rem;
+            margin: 20px 0;
+            span {
+                font-size: 1rem;
+                color: #ddd;
+            }
+        }
+        ul {
+            li {
+                padding: 10px 0;
+                border-bottom: 2px solid blue;
+                color: black;
+                background: #f1f8f6;
+            }
+        }
+        button {
+            background: white;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+    }
+    .personal button:hover {
+        background: #519251;
+    }
+    .business button:hover {
+        background: #2c4985;
+    }
+    .enterprise button:hover {
+        background: black;
+        color: white;
+    }
+}
+.details {
+    padding: 50px 0;
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+        gap: 40px;
+        margin-left: 315px;
+        div{
+            max-width: 500px;
+            h3{
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                font-weight: 100;
+            }
+            p{
+                max-width: 450px;
+            }
+        }
+    }
+}
+
+
